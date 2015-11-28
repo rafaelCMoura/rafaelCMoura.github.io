@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/lavish-bootstrap.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel='stylesheet' href='css/rotating-card.css' />
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -35,26 +36,71 @@
     </div>
   </nav>
 
-  <div class="scrollblock about">
-    <p>
-      About me
-    </p>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+        <div class="col-md-4 col-sm-6">
+          <div class="card-container manual-flip">
+            <div class="card">
+              <div class="front">
+                <div class="cover">
+                  <img src="images/rotating_card_thumb.png" />
+                </div>
+                <div class="user">
+                  <img class="img-circle" src="images/rotating_card_profile2.png" />
+                </div>
+                <div class="content">
+                  <div class="main">
+                    <h3 class="name">Rafael Cabral</h3>
+                    <p class="profession">Student</p>
+                    <h5><i class="fa fa-map-marker fa-fw text-muted"></i> Aracaju, Brazil</h5>
+                    <h5><i class="fa fa-envelope-o fa-fw text-muted"></i> rafael.xuxubelez@gmail.com</h5>
+                  </div>
+                  <div class="footer">
+                    <button class="btn btn-simple" onclick="rotateCard(this)">
+                      <i class="fa fa-mail-forward"></i> More
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- end front panel -->
+              <div class="back">
+                <div class="header">
+                  <h5 class="motto">"Make everything with love and humility!"</h5>
+                </div>
+                <div class="content">
+                  <div class="main">
+                    <h4 class="text-center">Experince</h4>
+                    <p>Working with numerical methods to solve PDE's and CFD problems using Matlab and C++ since 2006.</p>
+                    <h4 class="text-center">Areas of Interest</h4>
+                    <p>HTML5, CSS3, JavaScript, C++, Polymer, AngularJs and Node.js</p>
+                  </div>
+                </div>
+                <div class="footer">
+                  <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                    <i class="fa fa-reply"></i> Back
+                  </button>
+                  <div class="social-links text-center">
+                    <a href="#" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                    <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                    <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- end back panel -->
+            </div>
+            <!-- end card -->
+          </div>
+          <!-- end card-container -->
+        </div>
+        <!-- end col-md-4 -->
+      </div>
+      <!-- end col-sm-10 -->
+    </div>
+    <!-- end row -->
   </div>
-  <div class="scrollblock social">
-    <p>
-      :)
-    </p>
-  </div>
-   <div class="scrollblock resume">
-    <p>
-      :)
-    </p>
-  </div>
-     <div class="scrollblock contact">
-    <p>
-      :)
-    </p>
-  </div>
+
 
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

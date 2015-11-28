@@ -1,30 +1,5 @@
-.scrollblock {
-	position: relative;
-	margin: 0;
-	width: 100%;
-	color: white;
+body{
 	padding-top: 80px;
 	padding-bottom: 80px;
-}
-
-.about {
-	margin: auto;
-	background-color: #18BC9B;
-}
-
-.social {
-	margin: auto;
-	color: #34414F;
-	background-color: #FBFCFC;
-}
-
-.resume {
-	margin: auto;
-	background-color: #18BC9B;
-}
-
-.contact {
-	margin: auto;
-	color: #34414F;
 	background-color: #FBFCFC;
 }

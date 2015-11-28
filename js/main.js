@@ -1,8 +1,9 @@
-$('#searchBox').on('keyup', function() {
-  var input = $(this);
-  if (input.val().length === 0) {
-    input.addClass('empty');
+function rotateCard(btn) {
+  var $card = $(btn).closest('.card-container');
+  console.log($card);
+  if ($card.hasClass('hover')) {
+    $card.removeClass('hover');
   } else {
-    input.removeClass('empty');
+    $card.addClass('hover');
   }
-});
+}

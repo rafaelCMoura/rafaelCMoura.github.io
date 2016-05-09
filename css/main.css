@@ -3,3 +3,37 @@ body{
 	padding-bottom: 40px;
 	background-color: #FBFCFC;
 }
+
+.calc-button{
+	height: 40px;
+}
+
+.well{
+	height: 40px;
+	margin-bottom: 10px;
+	text-align: right;
+	overflow: hidden;
+	font-size: 20px;
+}
+
+#alertdiv{
+	margin-top: 4px;
+}
+
+#calc-display{
+	background-color: #f5f5f5;
+	margin-top: -13px;
+	height: 24px;
+	overflow:inherit;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.mini-project-content{
+	height: 250px;
+	width: 85%;
+	margin-top: -30px;
+	margin-bottom: 60px;
+	margin-left: auto;
+	margin-right: auto;
+}

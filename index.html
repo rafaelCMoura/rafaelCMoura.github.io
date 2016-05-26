@@ -188,6 +188,106 @@
 </div>
 
 
+
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+  <div class="card-container manual-flip">
+    <div class="card">
+
+      <div class="front">
+        <div class="header">
+          <h5 class="motto">Mohr's Cicle (Not finished)</h5>
+        </div>
+        <div class="content">
+          <div class="main mini-project-content">
+            <div class="row">
+              <div class="col-xs-12 text-center">
+                
+                <input type="text" class="sigma col-xs-3 text-center" placeholder="&sigma;&#8321;&#8321;" id="s11"/>
+                <input type="text" class="sigma col-xs-3 text-center" placeholder="&sigma;&#8322;&#8322;" id="s22"/>
+                <input type="text" class="sigma col-xs-3 text-center" placeholder="&sigma;&#8321;&#8322;" id="s12"/>
+                <input type="text" class="sigma col-xs-3 text-center" placeholder="&sigma;&#8322;&#8321;" id="s21"/>
+                
+                
+                <svg id="mohrsCircle">
+                  
+                  <!-- Main circle -->
+                  <circle cx="150" cy="120" r="90" stroke="gray" stroke-width="1" fill="white"></circle>
+                  
+                  
+                  <!-- Points -->
+                    <!-- Main Circle Center -->
+                    <circle cx="150" cy="120" r="4" stroke="black" stroke-width="1" fill="white"><title>(X,Y)</title></circle>
+                    
+                    <!-- Minimun streess -->
+                    <circle cx="60" cy="120" r="4" stroke="black" stroke-width="1" fill="white"><title>(X,Y)</title></circle>
+                    
+                    <!-- Maximun stress -->
+                    <circle cx="240" cy="120" r="4" stroke="black" stroke-width="1" fill="white"><title>(X,Y)</title></circle>
+                    
+                    <!-- Minimun shear -->
+                    <circle cx="150" cy="210" r="4" stroke="black" stroke-width="1" fill="white"><title>(X,Y)</title></circle>
+                    
+                    <!-- Maximun shear -->
+                    <circle cx="150" cy="30" r="4" stroke="black" stroke-width="1" fill="white"><title>(X,Y)</title></circle>
+                    
+                    <!-- Red point -->
+                    <circle id="mohrRedPoint" cx="230" cy="160" r="8" stroke="black" stroke-width="1" fill="#F44336"><title>(X,Y)</title></circle>
+                    
+                    <!-- Blue point -->
+                    <circle id="mohrBluePoint" cx="70" cy="80" r="8" stroke="black" stroke-width="1" fill="#2196F3"><title>(X,Y)</title></circle>
+                  
+                </svg>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="footer">
+            <button class="btn btn-simple" onclick="rotateCard(this)">
+              <i class="fa fa-mail-forward"></i> More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- end front panel -->
+      <div class="back">
+        <div class="header">
+          <h5 class="motto">Mohr's Circle Project</h5>
+        </div>
+        <div class="content">
+          <div class="main">
+            <h4 class="text-center">Description</h4>
+            <p>This is a Mohr's Cicle calculator that I wrote using javascript and svg :)</p>
+            <h4 class="text-center">What do you need to know</h4>
+            <ul>
+              <li> Draw svg elements</li>
+              <li> JavaScript </li>
+              <li> Mohr's circle construction </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="footer">
+          <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+            <i class="fa fa-reply"></i> Back
+          </button>
+          <div class="social-links text-center">
+            <a href="https://github.com/rafaelCMoura" class="github"><i class="fa fa-github fa-fw"></i></a>
+          </div>
+        </div>
+
+      </div>
+      <!-- end back panel -->
+    </div>
+    <!-- end card -->
+  </div>
+  
+  <!-- end card-container -->
+</div>
+
+
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>

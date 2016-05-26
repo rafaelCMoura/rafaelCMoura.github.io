@@ -4,6 +4,12 @@ body{
 	background-color: #FBFCFC;
 }
 
+#mohrsCircle{
+	width: 300px;
+	height: 250px;
+	margin-top: 15px;
+}
+
 .calc-button{
 	height: 40px;
 }

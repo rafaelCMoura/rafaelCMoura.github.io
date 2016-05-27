@@ -10,6 +10,21 @@ body{
 	margin-top: 15px;
 }
 
+#numbersGame{
+	width: 250px;
+	height: 250px;
+	margin-top: 15px;
+}
+
+.gameNumber{
+	fill: #E91E63;
+}
+
+.gameNumber text{
+	fill: white;
+}
+
+
 .calc-button{
 	height: 40px;
 }

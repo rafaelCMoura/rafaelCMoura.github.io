@@ -201,41 +201,43 @@
           <div class="main mini-project-content">
             <div class="row">
               <div class="col-xs-12 text-center">
+                <div class="row">
+                  <input type="text" class="sigma col-xs-4 text-center" placeholder="&sigma;&#8321;&#8321;" id="s11"/>
+                  <input type="text" class="sigma col-xs-4 text-center" placeholder="&sigma;&#8322;&#8322;" id="s22"/>
+                  <input type="text" class="sigma col-xs-4 text-center" placeholder="&sigma;&#8322;&#8321;" id="s21"/>
+                </div>
                 
-                <input type="text" class="sigma col-xs-4 text-center" placeholder="&sigma;&#8321;&#8321;" id="s11"/>
-                <input type="text" class="sigma col-xs-4 text-center" placeholder="&sigma;&#8322;&#8322;" id="s22"/>
-                <input type="text" class="sigma col-xs-4 text-center" placeholder="&sigma;&#8322;&#8321;" id="s21"/>
-                
-                
-                <svg id="mohrsCircle">
-                  
-                  <!-- Main circle -->
-                  <circle cx="125" cy="120" r="90" stroke="gray" stroke-width="1" fill="white"></circle>
-                  
-                  
-                  <!-- Points -->
-                    <!-- Main Circle Center -->
-                    <circle cx="125" cy="120" r="4" stroke="black" stroke-width="1" fill="white"><title>(X,Y)</title></circle>
+                <div class="row">
+                  <svg id="mohrsCircle">
                     
-                    <!-- Minimun streess -->
-                    <circle cx="35" cy="120" r="4" stroke="black" stroke-width="1" fill="white"><title>(X,Y)</title></circle>
+                    <!-- Main circle -->
+                    <circle cx="125" cy="120" r="90" stroke="gray" stroke-width="1" fill="white"></circle>
                     
-                    <!-- Maximun stress -->
-                    <circle cx="215" cy="120" r="4" stroke="black" stroke-width="1" fill="white"><title>(X,Y)</title></circle>
                     
-                    <!-- Minimun shear -->
-                    <circle cx="125" cy="210" r="4" stroke="black" stroke-width="1" fill="white"><title>(X,Y)</title></circle>
+                    <!-- Points -->
+                      <!-- Main Circle Center -->
+                      <circle cx="125" cy="120" r="4" stroke="black" stroke-width="1" fill="white"><title>(X,Y)</title></circle>
+                      
+                      <!-- Minimun streess -->
+                      <circle cx="35" cy="120" r="4" stroke="black" stroke-width="1" fill="white"><title>(X,Y)</title></circle>
+                      
+                      <!-- Maximun stress -->
+                      <circle cx="215" cy="120" r="4" stroke="black" stroke-width="1" fill="white"><title>(X,Y)</title></circle>
+                      
+                      <!-- Minimun shear -->
+                      <circle cx="125" cy="210" r="4" stroke="black" stroke-width="1" fill="white"><title>(X,Y)</title></circle>
+                      
+                      <!-- Maximun shear -->
+                      <circle cx="125" cy="30" r="4" stroke="black" stroke-width="1" fill="white"><title>(X,Y)</title></circle>
+                      
+                      <!-- Red point -->
+                      <circle id="mohrRedPoint" cx="205" cy="160" r="8" stroke="black" stroke-width="1" fill="#F44336"><title>(X,Y)</title></circle>
+                      
+                      <!-- Blue point -->
+                      <circle id="mohrBluePoint" cx="45" cy="80" r="8" stroke="black" stroke-width="1" fill="#2196F3"><title>(X,Y)</title></circle>
                     
-                    <!-- Maximun shear -->
-                    <circle cx="125" cy="30" r="4" stroke="black" stroke-width="1" fill="white"><title>(X,Y)</title></circle>
-                    
-                    <!-- Red point -->
-                    <circle id="mohrRedPoint" cx="205" cy="160" r="8" stroke="black" stroke-width="1" fill="#F44336"><title>(X,Y)</title></circle>
-                    
-                    <!-- Blue point -->
-                    <circle id="mohrBluePoint" cx="45" cy="80" r="8" stroke="black" stroke-width="1" fill="#2196F3"><title>(X,Y)</title></circle>
-                  
-                </svg>
+                  </svg>
+                </div>
                 
               </div>
             </div>
@@ -293,7 +295,7 @@
 
       <div class="front">
         <div class="header">
-          <h5 class="motto">Number's Sorting Game</h5>
+          <h5 class="motto">Number's Sorting Game (Not Finished)</h5>
         </div>
         <div class="content">
           <div class="main mini-project-content">

@@ -1,311 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8" />
+<title>Rafael Moura</title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/lavish-bootstrap.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel='stylesheet' href='css/rotating-card.css' />
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/calculator.css">
-    <link rel="stylesheet" href="css/mohrsCircle.css">
+
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/main.css">
+    
 </head>
-
 <body>
-
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" style="border-width:0;" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><i class="fa fa-rocket"></i></a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html#about"><i class="fa fa-home"></i> About</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mini Projects<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="index.html#calculator">Calculator</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
     
-<main class="col-md-12">
+    <header>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        
+    </header>
     
-    <article id="about" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <div class="card-container manual-flip">
-          <div class="card">
-            <div class="front">
-              <div class="cover">
-                <img src="images/taipu-peninsulademarau.jpg" />
-              </div>
-              <div class="user">
-                <img class="img-circle" src="images/rotating_card_profile.png" />
-              </div>
-              <div class="content">
-                <div class="main">
-                  <h3 class="name">Rafael Cabral</h3>
-                  <p class="profession">Mechanical Engineer and IS student</p>
-                  <h5><i class="fa fa-map-marker fa-fw text-muted"></i> Aracaju, Brazil</h5>
-                  <h5><i class="fa fa-envelope-o fa-fw text-muted"></i> rafael.xuxubelez@gmail.com</h5>
-                </div>
-                <div class="footer">
-                  <button class="btn btn-simple" onclick="rotateCard(this)">
-                    <i class="fa fa-mail-forward"></i> More
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- end front panel -->
-            <div class="back">
-              <div class="header">
-                <h5 class="motto">"Make everything with love and humility!"</h5>
-              </div>
-              <div class="content">
-                <div class="main">
-                  <h4 class="text-center">Experience</h4>
-                  <p>Working with numerical methods to solve PDE's and CFD problems using Matlab and C++ since 2006.</p>
-                  <h4 class="text-center">Areas of Interest</h4>
-                  <p>HTML5, CSS3, JavaScript, Python and Polymer</p>
-                </div>
-              </div>
-              <div class="footer">
-                <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
-                  <i class="fa fa-reply"></i> Back
-                </button>
-                <div class="social-links text-center">
-                  <a href="https://www.facebook.com/rafael.moura.9231712" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
-                  <a href="https://plus.google.com/u/0/112411180268772036957" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                </div>
-              </div>
-            </div>
-            <!-- end back panel -->
-          </div>
-          <!-- end card -->
-        </div>
-        <!-- end card-container -->
-    </article>
-
-
-    <article id="calculator" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-      <div class="card-container manual-flip">
-        <div class="card">
-
-          <div class="front">
-            <div class="header">
-              <h5 class="motto">Simple Calculator</h5>
-            </div>
-            <div class="content">
-              <div class="main mini-project-content">
-                <div class="row">
-                  <div class="calc-display well col-xs-12">
-                    <p id="calc-display"></p>
-                  </div>
-                </div>
-                <div class="row">
-                  <button type="button" onclick="refreshCalcDisplay(this)" class="calc-button btn btn-sm btn-warning col-xs-3">AC</button>
-                  <button type="button" onclick="refreshCalcDisplay(this)" class="calc-button btn btn-sm btn-default col-xs-3">%</button>
-                  <button type="button" onclick="refreshCalcDisplay(this)" class="calc-button btn btn-sm btn-default col-xs-3">/</button>
-                  <button type="button" onclick="refreshCalcDisplay(this)" class="calc-button btn btn-sm btn-danger  col-xs-3">C</button>
-                </div>
-                <div class="row">
-                  <button type="button" onclick="refreshCalcDisplay(this)" class="calc-button btn btn-sm btn-default col-xs-3">7</button>
-                  <button type="button" onclick="refreshCalcDisplay(this)" class="calc-button btn btn-sm btn-default col-xs-3">8</button>
-                  <button type="button" onclick="refreshCalcDisplay(this)" class="calc-button btn btn-sm btn-default col-xs-3">9</button>
-                  <button type="button" onclick="refreshCalcDisplay(this)" class="calc-button btn btn-sm btn-default col-xs-3">*</button>
-                </div>
-                <div class="row">
-                  <button type="button" onclick="refreshCalcDisplay(this)" class="calc-button btn btn-sm btn-default col-xs-3">4</button>
-                  <button type="button" onclick="refreshCalcDisplay(this)" class="calc-button btn btn-sm btn-default col-xs-3">5</button>
-                  <button type="button" onclick="refreshCalcDisplay(this)" class="calc-button btn btn-sm btn-default col-xs-3">6</button>
-                  <button type="button" onclick="refreshCalcDisplay(this)" class="calc-button btn btn-sm btn-default col-xs-3">-</button>
-                </div>
-                <div class="row">
-                  <button type="button" onclick="refreshCalcDisplay(this)" class="calc-button btn btn-sm btn-default col-xs-3">1</button>
-                  <button type="button" onclick="refreshCalcDisplay(this)" class="calc-button btn btn-sm btn-default col-xs-3">2</button>
-                  <button type="button" onclick="refreshCalcDisplay(this)" class="calc-button btn btn-sm btn-default col-xs-3">3</button>
-                  <button type="button" onclick="refreshCalcDisplay(this)" class="calc-button btn btn-sm btn-default col-xs-3">+</button>
-                </div>
-                <div class="row">
-                  <button type="button" onclick="refreshCalcDisplay(this)" class="calc-button btn btn-sm btn-default col-xs-3">0</button>
-                  <button type="button" onclick="refreshCalcDisplay(this)" class="calc-button btn btn-sm btn-default col-xs-3">.</button>
-                  <button type="button" onclick="refreshCalcDisplay(this)" class="calc-button btn btn-sm btn-default col-xs-3">()</button>
-                  <button type="button" onclick="refreshCalcDisplay(this)" class="calc-button btn btn-sm btn-primary col-xs-3">=</button>
-                </div>
-                <div id="alert_placeholder" class="row"></div>
-              </div>
-
-              <div class="footer">
-                <button class="btn btn-simple" onclick="rotateCard(this)">
-                  <i class="fa fa-mail-forward"></i> More
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- end front panel -->
-          <div class="back">
-            <div class="header">
-              <h5 class="motto">Simple Calculator Project</h5>
-            </div>
-            <div class="content">
-              <div class="main">
-                <h4 class="text-center">Description</h4>
-                <p>This is a simple calculator that I wrote using javascript and bootstrap :)</p>
-                <h4 class="text-center">What do you need to know</h4>
-                <ul>
-                  <li> HTML5 </li>
-                  <li> CSS3 </li>
-                  <li> JavaScript </li>
-                  <li> JQuery </li>
-                  <li> Bootstrap </li>
-                </ul>
-              </div>
-            </div>
-
-
-            <div class="footer">
-              <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
-                <i class="fa fa-reply"></i> Back
-              </button>
-              <div class="social-links text-center">
-                <a href="https://github.com/rafaelCMoura" class="github"><i class="fa fa-github fa-fw"></i></a>
-              </div>
-            </div>
-
-          </div>
-          <!-- end back panel -->
-        </div>
-        <!-- end card -->
-      </div>
-      <!-- end card-container -->
-    </article>
-
-
-    <article id="mohrCircle" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-      <div class="card-container manual-flip">
-        <div class="card">
-
-          <div class="front">
-            <div class="header">
-              <h5 class="motto">Mohr's Circle (Not finished)</h5>
-            </div>
-            <div class="content">
-              <div class="main mini-project-content">
-                <div class="row">
-                  <div class="col-xs-12 text-center">
-                    <div class="row">
-                      <input type="text" class="sigma col-xs-4 text-center" placeholder="&sigma;&#8321;&#8321;" id="s11"/>
-                      <input type="text" class="sigma col-xs-4 text-center" placeholder="&sigma;&#8322;&#8322;" id="s22"/>
-                      <input type="text" class="sigma col-xs-4 text-center" placeholder="&sigma;&#8322;&#8321;" id="s21"/>
-                    </div>
-
-                    <div class="row">
-                      <svg id="mohrsCircle">
-
-                        <!-- Main circle -->
-                        <circle cx="125" cy="120" r="90" stroke="gray" stroke-width="1" fill="white"></circle>
-
-
-                        <!-- Points -->
-                          <!-- Main Circle Center -->
-                          <circle cx="125" cy="120" r="4" stroke="black" stroke-width="1" fill="white"><title>(X,Y)</title></circle>
-
-                          <!-- Minimun streess -->
-                          <circle cx="35" cy="120" r="4" stroke="black" stroke-width="1" fill="white"><title>(X,Y)</title></circle>
-
-                          <!-- Maximun stress -->
-                          <circle cx="215" cy="120" r="4" stroke="black" stroke-width="1" fill="white"><title>(X,Y)</title></circle>
-
-                          <!-- Minimun shear -->
-                          <circle cx="125" cy="210" r="4" stroke="black" stroke-width="1" fill="white"><title>(X,Y)</title></circle>
-
-                          <!-- Maximun shear -->
-                          <circle cx="125" cy="30" r="4" stroke="black" stroke-width="1" fill="white"><title>(X,Y)</title></circle>
-
-                          <!-- Red point -->
-                          <circle id="mohrRedPoint" cx="205" cy="160" r="8" stroke="black" stroke-width="1" fill="#F44336"><title>(X,Y)</title></circle>
-
-                          <!-- Blue point -->
-                          <circle id="mohrBluePoint" cx="45" cy="80" r="8" stroke="black" stroke-width="1" fill="#2196F3"><title>(X,Y)</title></circle>
-
-                      </svg>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="footer">
-                <button class="btn btn-simple" onclick="rotateCard(this)">
-                  <i class="fa fa-mail-forward"></i> More
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- end front panel -->
-          <div class="back">
-            <div class="header">
-              <h5 class="motto">Mohr's Circle Project</h5>
-            </div>
-            <div class="content">
-              <div class="main">
-                <h4 class="text-center">Description</h4>
-                <p>This is a Mohr's Circle calculator that I wrote using javascript and svg :)</p>
-                <h4 class="text-center">What do you need to know</h4>
-                <ul>
-                  <li> Draw svg elements</li>
-                  <li> JavaScript </li>
-                  <li> Mohr's circle construction </li>
-                </ul>
-              </div>
-            </div>
-
-
-            <div class="footer">
-              <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
-                <i class="fa fa-reply"></i> Back
-              </button>
-              <div class="social-links text-center">
-                <a href="https://github.com/rafaelCMoura" class="github"><i class="fa fa-github fa-fw"></i></a>
-              </div>
-            </div>
-
-          </div>
-          <!-- end back panel -->
-        </div>
-        <!-- end card -->
-      </div>
-
-      <!-- end card-container -->
-    </article>
-
-
-</main>
+    <main>
+        <article>
+            <h1>Fontes usadas no post</h1>
+            <h2>Definição de css</h2>
+            <p>
+                Hoje decidi mudar a cara de meu portfolio, para tanto resolvi começar usando
+                menos bibliotecas para um visual mais simples, porém mais eficiente.
+            </p>
+        </article>
+    </main>
     
-<footer>
-    <p>&copy; Rafael Cabral de Moura, 2016</p>
-</footer>
+    <footer>
+        
+    </footer>
     
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/Chart.min.js.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/calculator.js"></script>
-<script src="js/mohrsCircle.js"></script>
-
 </body>
-
 </html>

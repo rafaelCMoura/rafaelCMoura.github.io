@@ -27,7 +27,8 @@
 main{
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 70%;
+    padding-top: 50px;
 }
 
 html{
@@ -85,8 +86,11 @@ header{
     padding: 15px;
     border-bottom: 1px;
     border-bottom-color: lightgray;
-    padding-bottom: 300px;
-    margin-bottom: 50px;
+    position:fixed;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    opacity: 0.9;
 }
 
 header a{
@@ -110,4 +114,19 @@ header ul li:hover{
     color: #e91e63;
 }
 
+.headerSpace{
+    height: 200px;
+    background-color: #3f51b5;
+}
 
+footer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer:hover{
+    color: #3f51b5;
+}

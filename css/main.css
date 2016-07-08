@@ -27,9 +27,11 @@
 main{
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 60%;
     padding-top: 50px;
 }
+
+
 
 html{
       -webkit-font-smoothing: antialiased;
@@ -68,6 +70,11 @@ h3{
     font-size: 112.5%;
 }
 
+p{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
 body{
     font-family: OpenSans-Regular, sans-serif;
     font-size: 100%;
@@ -90,7 +97,6 @@ header{
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    opacity: 0.9;
 }
 
 header a{
@@ -103,21 +109,46 @@ header ul{
 }
 
 
-header ul li{
+header nav ul li{
     list-style: none;
     display: inline;
     margin-right: 30px;
+    text-align: center;
 }
 
+header nav ul li a {
+    text-align: center;
+}
 
 header ul li:hover{
-    color: #e91e63;
+    color: #fce4ec;
+    transition: color 200ms ease-out;
+    border-bottom: 2px;
+    border-bottom-color: white;
 }
 
 .headerSpace{
-    height: 200px;
+    padding-top: 190px;
+    padding-bottom: 10px;
     background-color: #3f51b5;
+    text-align: center;
 }
+
+.headerSpace i{
+    color: white;
+    font-size: 200%;
+    margin: 0px 30px 10px 30px;
+}
+
+.headerSpace a{
+    text-decoration: none;
+}
+
+.headerSpace i:hover{
+    color: #fce4ec;
+}
+
+
 
 footer{
     margin-left: auto;
@@ -129,4 +160,5 @@ footer{
 
 footer:hover{
     color: #3f51b5;
+    transition: color 200ms ease-out;
 }

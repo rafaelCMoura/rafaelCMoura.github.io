@@ -18,20 +18,15 @@
     src: url("../fonts/opensans/OpenSans-Regular.ttf")
 }
 
+@font-face{
+    font-family: OpenSans-Bold;
+    src: url("../fonts/opensans/OpenSans-Bold.ttf")
+}
 
 *{
     padding: 0;
     margin: 0;
 }
-
-main{
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    padding-top: 50px;
-}
-
-
 
 html{
       -webkit-font-smoothing: antialiased;
@@ -114,6 +109,8 @@ header nav ul li{
     display: inline;
     margin-right: 30px;
     text-align: center;
+    font-family: OpenSans-Bold, sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
 header nav ul li a {
@@ -127,28 +124,34 @@ header ul li:hover{
     border-bottom-color: white;
 }
 
-.headerSpace{
+.topContent{
     padding-top: 190px;
     padding-bottom: 10px;
     background-color: #3f51b5;
     text-align: center;
 }
 
-.headerSpace i{
+.topContent i{
     color: white;
     font-size: 200%;
-    margin: 0px 30px 10px 30px;
+    -webkit-font-smoothing: antialiased;
+    margin: 0px 20px 10px 20px;
 }
 
-.headerSpace a{
+.topContent a{
     text-decoration: none;
 }
 
-.headerSpace i:hover{
+.topContent i:hover{
     color: #fce4ec;
 }
 
-
+article{
+    max-width: 41em;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    padding-top: 50px;
+}
 
 footer{
     margin-left: auto;

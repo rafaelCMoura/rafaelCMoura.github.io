@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+      -webkit-font-smoothing: antialiased;
+}
+
+h1{
+    font-family: Nunito-Regular, sans-serif;
+    font-size: 200%;
+    margin-bottom: 20px;
+}
+
+h1::before{
+    content: "\f101";
+    font-family: FontAwesome;
+    color: rgba(51, 53, 56, 0.1);
+    transition: color 100ms ease-out;
+    margin-right: 10px;
+}
+
+h1:hover:before{
+    content: "\f101";
+    font-family: FontAwesome;
+    color: black;
+    transition: color 100ms ease-out;
+    margin-right: 10px;
+}
+
+h2{
+    font-family: Nunito-Light, sans-serif;
+    font-size: 150%;
+    margin-bottom: 15px;
+}
+
+h3{
+    font-family: Nunito-Light, sans-serif;
+    font-size: 112.5%;
+}
+
+p{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+p::first-letter{
+    margin-left: 1em;
+}
+
+
+body{
+    font-family: OpenSans-Regular, sans-serif;
+    font-size: 100%;
+}
+
+
+::selection {
+  color: #fff;
+  background-color: #009688;
+}
+
+
+header{
+    text-align: center;
+    background-color: #3f51b5;
+    color: white;
+    padding: 15px;
+    position:fixed;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+header a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header ul{
+    display: inline;
+}
+
+
+header nav ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 30px;
+    text-align: center;
+    font-family: OpenSans-Bold, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+header nav ul li a {
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5)
+}
+
+header ul li:hover{
+    color: #fce4ec;
+    transition: color 200ms ease-out;
+    border-bottom: 2px;
+    border-bottom-color: white;
+}
+
+article{
+    max-width: 41em;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    padding-top: 50px;
+}
+
+footer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer:hover{
+    color: #3f51b5;
+    transition: color 200ms ease-out;
+}

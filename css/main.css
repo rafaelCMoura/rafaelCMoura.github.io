@@ -1,6 +1,252 @@
-@import url('typography.css');
-@import url('general.css');
-@import url('topContent.css');
+
+@font-face{
+    font-family: Nunito-Bold;
+    src: url("../fonts/nunito/Nunito-Bold.ttf")
+}
+
+@font-face{
+    font-family: Nunito-Light;
+    src: url("../fonts/nunito/Nunito-Light.ttf")
+}
+
+@font-face{
+    font-family: Nunito-Regular;
+    src: url("../fonts/nunito/Nunito-Regular.ttf")
+}
+
+@font-face{
+    font-family: OpenSans-Regular;
+    src: url("../fonts/opensans/OpenSans-Regular.ttf")
+}
+
+@font-face{
+    font-family: OpenSans-Bold;
+    src: url("../fonts/opensans/OpenSans-Bold.ttf")
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+      -webkit-font-smoothing: antialiased;
+}
+
+h1{
+    font-family: Nunito-Regular, sans-serif;
+    font-size: 200%;
+    margin-bottom: 20px;
+}
+
+h2::before{
+    content: "\f101";
+    font-family: FontAwesome;
+    color: rgba(51, 53, 56, 0.1);
+    transition: color 100ms ease-out;
+    margin-right: 10px;
+}
+
+h2:hover:before{
+    content: "\f101";
+    font-family: FontAwesome;
+    color: black;
+    transition: color 100ms ease-out;
+    margin-right: 10px;
+}
+
+h2{
+    
+    font-family: Nunito-Light, sans-serif;
+    font-size: 150%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h3{
+    font-family: Nunito-Light, sans-serif;
+    font-size: 112.5%;
+}
+
+p{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+body{
+    font-family: OpenSans-Regular, sans-serif;
+    font-size: 100%;
+}
+
+
+::selection {
+  color: #fff;
+  background-color: #009688;
+}
+
+
+header{
+    text-align: center;
+    background-color: #3f51b5;
+    color: white;
+    padding: 15px;
+    position:fixed;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+header a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header ul{
+    display: inline;
+}
+
+
+header nav ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 30px;
+    text-align: center;
+    font-family: OpenSans-Bold, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+header nav ul li a {
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5)
+}
+
+header ul li:hover{
+    color: #fce4ec;
+    transition: color 200ms ease-out;
+    border-bottom: 2px;
+    border-bottom-color: white;
+}
+
+article{
+    max-width: 41em;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    padding-top: 50px;
+}
+
+ul{
+    max-width: 41em;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.equation{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #E8EAF6;
+}
+
+.blogPost{
+    max-width: 44em;
+    margin: 0 auto;
+    padding: 0 3em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    background-color: white;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+}
+
+footer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer:hover{
+    color: #3f51b5;
+    transition: color 200ms ease-out;
+}
+
+.topContent{
+    padding-top: 100px;
+    padding-bottom: 10px;
+    background-color: #3f51b5;
+    text-align: center;
+}
+
+.topContent i{
+    color: white;
+    font-size: 200%;
+    -webkit-font-smoothing: antialiased;
+    margin: 80px 20px 10px 20px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.topContent a{
+    text-decoration: none;
+}
+
+.topContent i:hover{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.myName{
+    font-size: 400%;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.myWork{
+    font-size: 120%;
+    text-align: center;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+
+.articleGroup{
+    font-size: 400%;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.articleTitle{
+    font-size: 120%;
+    text-align: center;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    margin-bottom: 100px;
+}
+
 
 .cloudTwo {
     fill: white;
